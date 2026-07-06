@@ -1,0 +1,73 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*.pyc
+*.pyo
+*.pyd
+
+# Databases
+*.db
+*.db-journal
+*.sqlite
+*.sqlite3
+*.sqlite3-journal
+
+# Environments
+.env
+.env.*
+!.env.example
+.venv
+.venv*
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Testing / Cache
+.pytest_cache/
+.ruff_cache/
+.cache/
+.coverage
+htmlcov/
+.nox/
+.tox/
+
+# IDEs and Editors
+.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Project specific
+tmp*
+/connect.lock
+/coverage
+/typings
+.adk/
+.persist_vector_store
+.saved_chats
+.google-agents-cli/
+tools/a2a-inspector/
+
+# Node (in case node is used in subdirectories)
+**/node_modules/
+npm-debug.log
+yarn-error.log
+
+# Credentials and private keys
+*.pem
+*-key.json
+credentials*.json
