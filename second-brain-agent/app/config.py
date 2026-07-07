@@ -19,7 +19,11 @@ class Config:
     # Gemini credentials and models
     GEMINI_API_KEY = os.getenv("GEMINI_API_KEY", "")
     GEMINI_MODEL = os.getenv("GEMINI_MODEL", "gemini-2.5-flash")
-    EMBEDDING_MODEL = os.getenv("EMBEDDING_MODEL", "text-embedding-004")
+
+    # Auto-detect default embedding model based on provider (Vertex AI vs AI Studio)
+    _use_vertex = os.getenv("GOOGLE_GENAI_USE_VERTEXAI", "").lower() == "true"
+    _default_embedding = "text-embedding-004" if _use_vertex else "gemini-embedding-001"
+    EMBEDDING_MODEL = os.getenv("EMBEDDING_MODEL", _default_embedding)
 
     # Server port
     PORT = int(os.getenv("PORT", "8080"))
