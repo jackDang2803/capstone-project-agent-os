@@ -2,8 +2,6 @@
 
 This repository contains the **Second Brain Agent**, built using the Google Agent Development Kit (ADK) and the Gemini GenAI SDK. It is designed to act as an automated personal knowledge assistant—scraping incoming emails, securing sensitive data, embedding/tagging knowledge, finding semantic connections, and generating periodic digests.
 
-This project was created for the **AI Agents: Intensive Vibe Coding Capstone Project** Kaggle competition.
-
 ---
 
 ## 🎯 Selected Track
